@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*   İSİM SOYİSİM NUMARA şeklinde tutulan dataset dosyasındaki veriler okunup bunlar daha sonra yenihal dosyasına yazılır.  */
 
 int main()
 { 
@@ -19,7 +20,7 @@ int main()
 			exit(EXIT_FAILURE);
 		}
 		else{
-            printf("\n Dosya acildi...\n");
+           		printf("\n Dosya acildi...\n");
 		    for(i=0;fscanf(f,"%s",deneme[i])==1;i++,sayac++);
 
 		    for(int x=0,i=0;x<sayac;x+=3,i++){
@@ -32,7 +33,7 @@ int main()
 			fprintf(x,"\n");
 		    }
         }
-		fclose(f);
-		fclose(x);	
+	fclose(f);
+	fclose(x);	
 	return 0;
 }
