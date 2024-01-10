@@ -62,6 +62,7 @@ int main(void)
 {
     Colors   myColors;
     printFormat(CYAN | BOLD | UNDER, "DENEME YAZISIDIR\n");
+    printFormat(GREEN | BOLD, "DENEME YAZISIDIR\n");
   
     return 0;
 }  
